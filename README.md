@@ -1,16 +1,16 @@
-# Metasploit-Vulnerbailities-Assessment
-# Metasploitable Vulnerability Assessment (Sanitized)
+
+# Metasploitable Vulnerability Assessment 
 
 > **⚠️ Important:** This file is sanitized for public display. All real IP addresses, MAC addresses, hostnames and other identifying details have been replaced with placeholders (`TARGET_IP`, `ATTACKER_IP`, `VM_MAC`). Do **not** publish raw screenshots or logs that reveal your real public IP.
 
----
+
 
 ## Project summary
 **Project:** Metasploitable Vulnerability Assessment (lab)  
 **Objective:** Perform safe, controlled host discovery, service enumeration, and vulnerability scanning on an intentionally vulnerable Metasploitable VM to learn common attack vectors and mitigation strategies.  
 **Scope:** Single lab target in an isolated environment (NAT or Host-only). No external or third-party systems were targeted.
 
----
+
 
 ## Environment (sanitized)
 - **Attacker (Kali Linux VM):** `ATTACKER_VM` — placeholder IP: `ATTACKER_IP`  
@@ -18,7 +18,7 @@
 - **Network:** Isolated lab network (use NAT or Host-only)  
 - **Tools used:** `netdiscover`, `nmap` (with `-sV`, `-sC`, `--script=vuln`), `ftp` client, `msfconsole` (Metasploit) — all actions performed in a lab-only environment
 
----
+
 
 ## Methodology (high level)
 1. **Discovery:** find live hosts on the lab subnet using `netdiscover`.  
@@ -27,7 +27,7 @@
 4. **Validation:** manual checks (e.g., anonymous FTP) and controlled exploit validation inside the isolated lab.  
 5. **Sanitization:** redact or remove any identifying details before publishing results.
 
----
+
 
 ## Key commands (sanitized examples)
 Replace `TARGET_IP` with your lab target only when running in a private environment.
@@ -73,7 +73,7 @@ SMB / NFS / legacy services: multiple intentionally exposed legacy services (tel
 
 
 
----
+
 
 Short step-by-step summary (what I did)
 
@@ -94,7 +94,7 @@ Short step-by-step summary (what I did)
 
 
 
----
+
 
 Suggested follow-up exercises (lab-only)
 
@@ -110,7 +110,7 @@ Post-exploitation reporting: produce a sanitized report showing the exploitation
 
 
 
----
+
 
 Remediation recommendations (what to advise a client)
 
